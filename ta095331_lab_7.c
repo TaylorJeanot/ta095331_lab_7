@@ -8,6 +8,9 @@ void bubbleSort(int arr[], int n)
     int i, j ,temp;
     int num_swaps =0;
     for (i = 0; i < n-1; i++) {
+
+        printf("\nNumber of Swaps: %d", num_swaps);
+        num_swaps = 0;
         for(j=0; j < n-i-1; j++) {
             if (arr[j] > arr[j+1]) {
                 temp = arr[j];
@@ -17,10 +20,8 @@ void bubbleSort(int arr[], int n)
             }
         }
     }
-    for (i = 0; i <n-1; i++)
-        printf("%d  ", arr[i]);
-
-    printf("\nNumber of Swaps: %d", num_swaps);
+    /*for (i = 0; i <n-1; i++)
+        printf("%d  ", arr[i]);*/
 }
 
 int main () {
